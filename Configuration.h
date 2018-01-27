@@ -375,10 +375,10 @@
   //#define  DEFAULT_Ki 1.08
   //#define  DEFAULT_Kd 114.0
 
-  // Tuned by ralf-e. Always re-tune for your machine!
-  #define  DEFAULT_Kp 16.83
-  #define  DEFAULT_Ki 1.02
-  #define  DEFAULT_Kd 69.29
+  // A6 with default extruder 
+  #define  DEFAULT_Kp 19.24
+  #define  DEFAULT_Ki 1.23
+  #define  DEFAULT_Kd 75.27
 
 #endif // PIDTEMP
 
