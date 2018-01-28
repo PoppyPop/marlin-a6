@@ -426,9 +426,23 @@
   //#define  DEFAULT_bedKi 35.65
   //#define  DEFAULT_bedKd 610.21
   
-  #define  DEFAULT_bedKp 368.61
-  #define  DEFAULT_bedKi 42.89
-  #define  DEFAULT_bedKd 791.96
+  // ANET A6 non isolated 60 degreesC for 8 cycles
+  // M303 E-1 C8 S60
+  //#define  DEFAULT_bedKp 368.61
+  //#define  DEFAULT_bedKi 42.89
+  //#define  DEFAULT_bedKd 791.96
+  
+  // ANET A6 isolated 60 degreesC for 8 cycles
+  // M303 E-1 C8 S60
+  //#define  DEFAULT_bedKp 320.65
+  //#define  DEFAULT_bedKi 39.54
+  //#define  DEFAULT_bedKd 650.13
+  
+  // ANET A6 isolated 90 degreesC for 8 cycles
+  // M303 E-1 C8 S90
+  #define  DEFAULT_bedKp 469.43
+  #define  DEFAULT_bedKi 62.29
+  #define  DEFAULT_bedKd 884.47
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
