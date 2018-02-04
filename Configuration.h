@@ -343,7 +343,7 @@
 #define PID_MAX BANG_MAX // Limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #define PID_K1 0.95      // Smoothing factor within the PID
 #if ENABLED(PIDTEMP)
-  #define PID_AUTOTUNE_MENU // Add PID Autotune to the LCD "Temperature" menu to run M303 and apply the result.
+  //#define PID_AUTOTUNE_MENU // Add PID Autotune to the LCD "Temperature" menu to run M303 and apply the result.
   //#define PID_DEBUG // Sends debug data to the serial port.
   //#define PID_OPENLOOP 1 // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
   //#define SLOW_PWM_HEATERS // PWM with very low frequency (roughly 0.125Hz=8s) and minimum state time of approximately 1s useful for heaters driven by a relay
@@ -775,7 +775,7 @@
 // X offset = -28mm, Y offset = 19mm
 #define X_PROBE_OFFSET_FROM_EXTRUDER -28 // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER  19 // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER  -0.23 // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER  -0.21 // Z offset: -below +above  [the nozzle]
 
 #define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the probe.
 
@@ -897,11 +897,11 @@
 //#define Z_MIN_POS 0
 //#define Z_MAX_POS 250
 
-// ANET A6, X0/Y0 0 front left bed edge :
-#define X_BED_SIZE 222
-#define Y_BED_SIZE 222
-#define X_MIN_POS -3
-#define Y_MIN_POS -5
+// ANET A6, modded X/Z axis :
+#define X_BED_SIZE 220
+#define Y_BED_SIZE 220
+#define X_MIN_POS 0
+#define Y_MIN_POS -1
 #define Z_MIN_POS 0
 #define Z_MAX_POS 230
 
@@ -1066,9 +1066,9 @@
 
   // ANET A6 with new X-Axis and modded Y-Axis
   #define LEFT_PROBE_BED_POSITION 20
-  #define RIGHT_PROBE_BED_POSITION 194
+  #define RIGHT_PROBE_BED_POSITION 192
   #define FRONT_PROBE_BED_POSITION 20
-  #define BACK_PROBE_BED_POSITION 194
+  #define BACK_PROBE_BED_POSITION 192
 
   // ANET A6 with new X-Axis and modded Y-Axis, X0/Y0 front left bed edge
   //#define LEFT_PROBE_BED_POSITION 20
