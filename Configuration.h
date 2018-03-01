@@ -775,7 +775,7 @@
 // X offset = -28mm, Y offset = 19mm
 #define X_PROBE_OFFSET_FROM_EXTRUDER -28 // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER  19 // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER  -0.21 // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER  -0.55 // Z offset: -below +above  [the nozzle]
 
 #define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the probe.
 

@@ -1,0 +1,14 @@
+// MOve to 0
+G1 Z0
+
+// Move to -0,03 need disabled endstop
+G1 Z-0.03
+
+// Auto-home
+G28
+
+// SET Z offset
+M851 Z-0.55
+
+// Disable soft endstop (0, 1 = enable)
+M211 S0
